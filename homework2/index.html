@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос для обладателей магических животных</title>
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/500107/owl.svg" type="image/svg">
+</head>
+<body>
+   <h1>Опрос для владельцев животных</h1> 
+   <form method="post">
+   
+    <label for="owner-name">Имя владельца:</label>
+    <input type="text" placeholder="Введите Ваше имя" id="owner-name" required>
+    <br>
+    <label for="phone">Контактный номер:</label>
+    <input type="tel" placeholder="Введите номер" id="phone" required>
+    <br>
+    <label for="email">Адрес электронной почты:</label>
+    <input type="email" placeholder="Эл.почта" id="email">
+    <br>
+    <label for="name-pets">Кличка питомца</label>
+    <input type="text" placeholder="Введите кличку" id="name-pets">
+    <br>
+   <!-- Вместо породы прописала вид животного -->
+   <label for="pet-type">Вид животного</label>
+   <select name="pet-type" id="pet-type">
+    <option value="cat">Кошка</option>
+    <option value="dog">Собака</option>
+    <option value="owl">Сова</option>
+    <option value="snake">Змея</option>
+    <option value="frog">Жаба</option>
+    <option value="other">Другое</option>
+   </select>
+   <br>
+   <p>Чем питается Ваше животное?</p>
+   <input type="checkbox" value="1">Сухой корм
+   <input type="checkbox" value="2">Влажный корм
+   <input type="checkbox" value="3">Натуральный корм 
+   <br>
+   <label>Пол животного</label>
+   <input type="radio" name="pet-gender" id="pet-gender-male"> 
+   <label for="pet-gender-male">Мужской</label>
+   <input type="radio" name="pet-gender" id="pet-gender-female">
+   <label for="pet-gender-female">Женский</label>
+    <br>
+   <label for="comment">Комментарий владельца:<br>
+    <textarea id="comment" cols="70" rows="5"></textarea>
+    </label>
+    <br>
+   <label for="photo">Приложить фото питомца:</label>
+    <input type="file" id="photo">
+    <br>
+    <input type="submit" value="Сохранить">
+
+</form>
+</body>
+</html>
